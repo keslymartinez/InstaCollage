@@ -1,0 +1,13 @@
+
+
+.fondo{
+  height: 100vh;
+  background: linear-gradient(
+  	to top right, #DD8550, #ABC769, #6FC9AC);
+}
+
+
+img {
+	width: 300px;
+}
+
