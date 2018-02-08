@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drap and Drop</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+<div id="fondo">
+<div class="container">
+      <div class="col-md-2 recientes">
+        <a href="" class="fotos">Fotos Recientes</a>
+        <!--A TODAS LAS IMAGENES QUE QUERRAMOS MOVER, LE DAREMOS EL ATRIBUTO DRAGGABLE="TRUE", QUE NOS PERMITE QUE ESE ELEMENTO SEA ARRASTRABLE-->
+        <!--TAMBIEN EL EVENTO ONDRAGSTART QUE OCURRE CUANDO EL USUARIO COMMIENZA A ARRASTRAR UN ELEMENTO-->
+        <img id="foto1" draggable="true" ondragstart="drag(event)" src="assets/img/machu-picchu-cusco-peru.jpg">
+        <img id="foto2" draggable="true" ondragstart="drag(event)" src="assets/img/rio-de-Janeiro.jpg" alt="">
+        <img id="foto3" draggable="true" ondragstart="drag(event)" src="assets/img/playasdeBrasil.jpg" alt="">
+        <img id="foto4" draggable="true" ondragstart="drag(event)" src="assets/img/lasSieteTazas.jpg" alt="">
+      </div>
+	<div class="col-md-2 ff"><!--DEBEMOS TENER UNA ESCRUCTURA EN HTML DONDE LE DIREMOS A NUESTROS ELEMENTOS QUE MOVEREMOS DONDE QUEREMOS QUE QUEDEN-->
+        <a href="" class="fotos">Fotos Favoritas</a>
+        <!--A NUESTROS DIV CONTENEDORES LE DAREMOS UN EVENTOS ONDRAGOVER, QUE OCURRE CUANDO EL ELEMENTO SE ESTA ARRASTRANDO Y EL EVENTO ONDROP, QUE ES EL CUAL PERMITE LA TRANSFERENCIA DE DATOS-->
+        <div class="marco-foto" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+        <div class="marco-foto" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+        <div class="marco-foto" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+</div>
+</div>
+
+<script src="assets/js/app.js" type="text/javascript"></script>
+
+</body>
+</html>

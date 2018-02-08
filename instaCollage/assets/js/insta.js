@@ -11,9 +11,7 @@ var valida = function (){
 	var clave = document.getElementById('password').value;
 		if ((clave === 123456) || (clave.length <6)) {
 			alert('ingrese una clave diferente');
-		} else{
-
-		window.location.href='';
+		} else{ window.location.href ='../js/insta1.html';
 		}
 	
 	};
